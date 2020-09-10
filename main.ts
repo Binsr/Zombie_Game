@@ -26,3 +26,32 @@ let myVar: unknown = "assert test";
 console.log((myVar as string).length);
 
 let Mult: boolean | string;
+
+//-------------------------------------------------
+
+function add(number1: number, number2?: number): number{
+    if(!number2)
+        return number1;
+    return number1 + number2;
+}
+
+
+function add2(number1: number= 0, number2: number= 0): number{
+    return number1 + number2;
+}
+
+let x= 5; let y= 5;
+
+(function mult(number1: number= 1, number2: number= 1): void{
+  let x= 3;
+  x= x*y;
+})();
+
+
+console.log("zatvorenje: " + x);
+
+console.log(add(3,4));
+console.log(add(3));
+
+console.log(add2(3,4));
+console.log(add2(3));

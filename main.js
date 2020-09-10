@@ -21,3 +21,27 @@ console.log(c);
 var myVar = "assert test";
 console.log(myVar.length);
 var Mult;
+//-------------------------------------------------
+function add(number1, number2) {
+    if (!number2)
+        return number1;
+    return number1 + number2;
+}
+function add2(number1, number2) {
+    if (number1 === void 0) { number1 = 0; }
+    if (number2 === void 0) { number2 = 0; }
+    return number1 + number2;
+}
+var x = 5;
+var y = 5;
+(function mult(number1, number2) {
+    if (number1 === void 0) { number1 = 1; }
+    if (number2 === void 0) { number2 = 1; }
+    var x = 3;
+    x = x * y;
+})();
+console.log("zatvorenje: " + x);
+console.log(add(3, 4));
+console.log(add(3));
+console.log(add2(3, 4));
+console.log(add2(3));
