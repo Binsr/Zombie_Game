@@ -40,6 +40,9 @@ var y = 5;
     var x = 3;
     x = x * y;
 })();
+function greetPerson(p) {
+    console.log(p.firstname);
+}
 console.log("zatvorenje: " + x);
 console.log(add(3, 4));
 console.log(add(3));

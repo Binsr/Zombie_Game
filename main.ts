@@ -47,6 +47,14 @@ let x= 5; let y= 5;
   x= x*y;
 })();
 
+type Person = {
+    firstname: string;
+    lastname: string;
+}
+
+function greetPerson(p: Person): void{
+    console.log(p.firstname);
+}
 
 console.log("zatvorenje: " + x);
 
